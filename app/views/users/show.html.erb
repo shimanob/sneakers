@@ -68,20 +68,20 @@
                     <span class="panel-icon">
                       <i class="fas fa-book" aria-hidden="true"></i>
                     </span>
-                    このスニーカーを見る
+                    この投稿を見る
                   <% end %>
                   <% if @user.id == current_user.id %>
                     <%= link_to edit_sneaker_path(sneaker), class: "panel-block" do %>
                       <span class="panel-icon">
                         <i class="fas fa-edit"></i>
                       </span>
-                      このスニーカーを編集する
+                      この投稿を編集する
                     <% end %>
                     <%= link_to sneaker_path(sneaker), method: :delete, data: {confirm: "削除しますか？"}, class: "panel-block" do %>
                       <span class="panel-icon">
                         <i class="fas fa-trash"></i>
                       </span>
-                      このスニーカーを削除する
+                      この投稿を削除する
                     <% end %>
                   <% end %>
                   </div>
